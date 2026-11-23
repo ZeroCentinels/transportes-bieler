@@ -12,6 +12,7 @@
   <link rel="icon" href="69355.jpg" type="image/jpeg" />
   <link rel="apple-touch-icon" href="69355.jpg" />
   <link rel="preload" as="image" href="69355.jpg" />
+  <link rel="preload" as="image" href="img/hyundai-staria.png" />
   <link rel="preconnect" href="https://images.unsplash.com" />
   <link rel="preconnect" href="https://unpkg.com" crossorigin />
   <meta property="og:type" content="website" />
@@ -65,6 +66,8 @@
               sky: "#60a5fa",
               blue: "#2563eb",
               dark: "#1e3a8a",
+              ink: "#0f172a",
+              gold: "#c49a5a",
               ws: "#25D366"
             }
           },
@@ -264,32 +267,49 @@
             <div class="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-600">
               <span class="flex items-center gap-2"><i data-lucide="badge-check" class="h-4 w-4 text-blue-600"></i> Conductores profesionales</span>
               <span class="flex items-center gap-2"><i data-lucide="clock" class="h-4 w-4 text-blue-600"></i> Atención 24/7</span>
-              <span class="flex items-center gap-2"><i data-lucide="users" class="h-4 w-4 text-blue-600"></i> Grupos de 10 a 50 pasajeros</span>
+              <span class="flex items-center gap-2"><i data-lucide="map" class="h-4 w-4 text-blue-600"></i> Cobertura en todo Chile</span>
             </div>
           </div>
 
           <div class="relative min-w-0">
-            <div class="overflow-hidden rounded-[2rem] bg-gradient-to-br from-sky-200 to-blue-300 shadow-xl">
-              <div class="relative aspect-[4/4.4] sm:aspect-[4/3.2] lg:aspect-[4/3]">
-                <img
-                  src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1400&auto=format&fit=crop"
-                  alt="Vehículo ejecutivo de Transportes Bieler circulando por autopista"
-                  class="h-full w-full object-cover opacity-65"
-                  loading="eager"
-                  fetchpriority="high"
-                  decoding="async" />
-                <div class="absolute inset-x-4 bottom-4 sm:inset-x-6 sm:bottom-6">
-                  <div class="grid gap-4 rounded-[1.75rem] border border-blue-100 bg-white/92 p-5 shadow-lg backdrop-blur sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center md:p-6">
-                    <div class="flex min-w-0 items-center gap-4">
-                      <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-blue-50 text-blue-700">
-                        <i data-lucide="bus-front" class="h-8 w-8"></i>
-                      </div>
-                      <div class="min-w-0">
-                        <p class="text-sm font-medium text-slate-500">Unidad Premium</p>
-                        <p class="text-lg font-bold leading-tight text-brand-dark">Comodidad, imagen corporativa y seguridad</p>
-                      </div>
-                    </div>
-                    <a href="#contacto" class="btn bg-brand-blue px-6 text-white hover:bg-blue-700 sm:w-auto">Cotizar</a>
+            <div class="relative overflow-hidden rounded-[2rem] border border-slate-700 bg-brand-ink shadow-2xl">
+              <div class="absolute -right-20 -top-24 h-72 w-72 rounded-full bg-blue-600/30 blur-3xl"></div>
+              <div class="absolute -bottom-24 -left-16 h-64 w-64 rounded-full bg-brand-gold/20 blur-3xl"></div>
+              <div class="relative flex min-h-[480px] flex-col p-6 sm:min-h-[520px] sm:p-8">
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <p class="text-xs font-bold uppercase tracking-[0.22em] text-brand-gold">Movilidad ejecutiva</p>
+                    <h2 class="mt-2 text-2xl font-bold text-white sm:text-3xl">Hyundai Staria Premium</h2>
+                    <p class="mt-2 max-w-md text-sm leading-relaxed text-slate-300">Presentación impecable, amplitud y confort para reuniones, aeropuertos, eventos y turismo privado.</p>
+                  </div>
+                  <span class="hidden rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-semibold text-white sm:inline-flex">Servicio privado</span>
+                </div>
+
+                <div class="relative flex flex-1 items-center justify-center py-5">
+                  <div class="absolute bottom-8 h-14 w-4/5 rounded-[50%] bg-black/50 blur-2xl"></div>
+                  <img
+                    src="img/hyundai-staria.png"
+                    alt="Hyundai Staria negra de Transportes Bieler"
+                    class="relative z-10 w-full max-w-[560px] object-contain drop-shadow-2xl"
+                    width="528"
+                    height="311"
+                    loading="eager"
+                    fetchpriority="high"
+                    decoding="async" />
+                </div>
+
+                <div class="grid gap-3 sm:grid-cols-3">
+                  <div class="rounded-2xl border border-white/10 bg-white/10 p-3 backdrop-blur">
+                    <i data-lucide="briefcase-business" class="h-5 w-5 text-brand-gold"></i>
+                    <p class="mt-2 text-sm font-semibold text-white">Empresas y ejecutivos</p>
+                  </div>
+                  <div class="rounded-2xl border border-white/10 bg-white/10 p-3 backdrop-blur">
+                    <i data-lucide="plane" class="h-5 w-5 text-brand-gold"></i>
+                    <p class="mt-2 text-sm font-semibold text-white">Aeropuerto y hoteles</p>
+                  </div>
+                  <div class="rounded-2xl border border-white/10 bg-white/10 p-3 backdrop-blur">
+                    <i data-lucide="map-pinned" class="h-5 w-5 text-brand-gold"></i>
+                    <p class="mt-2 text-sm font-semibold text-white">Tours privados</p>
                   </div>
                 </div>
               </div>
@@ -324,11 +344,11 @@
           </article>
 
           <article class="card overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1529078155058-5d716f45d604?q=80&w=1200&auto=format&fit=crop" alt="Traslado para colegios y empresas" class="h-44 w-full object-cover" loading="lazy" decoding="async">
+            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200&auto=format&fit=crop" alt="Traslado ejecutivo desde y hacia el aeropuerto" class="h-44 w-full object-cover" loading="lazy" decoding="async">
             <div class="flex h-full flex-col p-5">
-              <h3 class="flex items-center gap-2 text-lg font-semibold text-brand-dark"><i data-lucide="users" class="h-5 w-5"></i> Colegios y empresas</h3>
-              <p class="mt-2 text-slate-600">Salidas educativas y viajes corporativos con protocolos de seguridad y trazabilidad.</p>
-              <a href="#contacto" class="mt-4 inline-flex items-center gap-2 font-medium text-brand-blue hover:underline">Cotizar salida <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+              <h3 class="flex items-center gap-2 text-lg font-semibold text-brand-dark"><i data-lucide="plane" class="h-5 w-5"></i> Aeropuerto y hoteles</h3>
+              <p class="mt-2 text-slate-600">Recepción coordinada, seguimiento de vuelos y traslado privado para pasajeros y equipos ejecutivos.</p>
+              <a href="#contacto" class="mt-4 inline-flex items-center gap-2 font-medium text-brand-blue hover:underline">Cotizar transfer <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
             </div>
           </article>
 
@@ -369,11 +389,13 @@
           </article>
 
           <article class="card overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1688619103602-35c5b27a6619?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzYxMjQwNTc4fA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1200&q=80" alt="Van Mercedes-Benz en ruta" class="h-48 w-full object-cover" loading="lazy" decoding="async">
+            <div class="flex h-48 items-center justify-center bg-gradient-to-br from-slate-100 to-blue-50 p-4">
+              <img src="img/hyundai-staria.png" alt="Hyundai Staria Premium negra de Transportes Bieler" class="h-full w-full object-contain drop-shadow-xl" loading="lazy" decoding="async">
+            </div>
             <div class="flex h-full flex-col p-5">
-              <h3 class="flex items-center gap-2 text-lg font-semibold text-brand-dark"><i data-lucide="bus-front" class="h-5 w-5"></i> Van premium</h3>
-              <p class="mt-2 text-slate-600"><strong>Asientos:</strong> 10 a 15. A/C, cinturones de tres puntas y maletero.</p>
-              <a href="#contacto" class="mt-4 inline-flex items-center gap-2 font-medium text-brand-blue hover:underline">Cotizar van <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+              <h3 class="flex items-center gap-2 text-lg font-semibold text-brand-dark"><i data-lucide="bus-front" class="h-5 w-5"></i> Hyundai Staria Premium</h3>
+              <p class="mt-2 text-slate-600">Configuración ejecutiva, climatización, cinturones de seguridad, amplio maletero y excelente presentación.</p>
+              <a href="#contacto" class="mt-4 inline-flex items-center gap-2 font-medium text-brand-blue hover:underline">Cotizar Staria <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
             </div>
           </article>
         </div>
@@ -417,6 +439,29 @@
               <p class="mt-2 text-slate-600">Historia y cultura en el centro de Santiago con opciones de guías certificados.</p>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 md:py-16" aria-labelledby="instagram-title">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="relative overflow-hidden rounded-[2rem] bg-brand-ink p-7 shadow-xl sm:p-9 lg:p-12">
+          <div class="absolute -right-16 -top-20 h-56 w-56 rounded-full bg-blue-600/25 blur-3xl"></div>
+          <div class="absolute -bottom-24 left-1/3 h-52 w-52 rounded-full bg-brand-gold/20 blur-3xl"></div>
+          <div class="relative grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_auto]">
+            <div>
+              <div class="flex items-center gap-3 text-brand-gold">
+                <i data-lucide="instagram" class="h-6 w-6"></i>
+                <span class="text-sm font-bold uppercase tracking-[0.18em]">En ruta con Transportes Bieler</span>
+              </div>
+              <h2 id="instagram-title" class="mt-4 max-w-2xl text-3xl font-extrabold leading-tight text-white md:text-4xl">Conocé nuestros destinos, servicios y experiencias reales.</h2>
+              <p class="mt-3 max-w-2xl text-slate-300">Seguinos en Instagram para descubrir traslados corporativos, escapadas, city tours y recorridos de norte a sur de Chile.</p>
+            </div>
+            <a href="https://www.instagram.com/transportesbieler/" target="_blank" rel="noopener me" class="btn border border-brand-gold/50 bg-brand-gold text-brand-ink hover:bg-amber-300 lg:w-auto" aria-label="Ver Instagram de Transportes Bieler">
+              <i data-lucide="instagram" class="h-5 w-5"></i>
+              Ver @transportesbieler
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -569,9 +614,9 @@
     target="_blank"
     rel="noopener"
     aria-label="Abrir conversación de WhatsApp con Transportes Bieler"
-    class="fixed bottom-4 right-4 z-50 inline-flex min-h-[56px] items-center gap-2 rounded-full bg-brand-ws px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:brightness-110 sm:bottom-6 sm:right-6 sm:px-5 sm:py-4">
+    class="fixed bottom-4 right-4 z-50 inline-flex h-14 w-14 items-center justify-center gap-2 rounded-full bg-brand-ws text-sm font-semibold text-white shadow-lg transition hover:brightness-110 sm:bottom-6 sm:right-6 sm:h-auto sm:w-auto sm:px-5 sm:py-4">
     <i data-lucide="message-circle" class="h-5 w-5"></i>
-    <span>WhatsApp</span>
+    <span class="hidden sm:inline">WhatsApp</span>
   </a>
 
   <script>
