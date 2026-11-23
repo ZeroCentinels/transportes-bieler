@@ -64,8 +64,8 @@
             brand: {
               light: "#cfe9ff",
               sky: "#60a5fa",
-              blue: "#2563eb",
-              dark: "#1e3a8a",
+              blue: "#183c46",
+              dark: "#152f37",
               ink: "#0f172a",
               gold: "#c49a5a",
               ws: "#25D366"
@@ -95,7 +95,7 @@
     body {
       margin: 0;
       overflow-x: hidden;
-      background: linear-gradient(180deg, #eff6ff 0%, #ffffff 40%, #eff6ff 100%);
+      background: #faf9f6;
       color: #1e293b;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -112,13 +112,13 @@
       align-items: center;
       justify-content: center;
       gap: 0.5rem;
-      border-radius: 1rem;
+      border-radius: 0.25rem;
       padding: 0.85rem 1.35rem;
       font-weight: 700;
       line-height: 1.2;
       text-align: center;
       transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
-      box-shadow: 0 10px 30px rgba(37, 99, 235, 0.12);
+      box-shadow: none;
     }
 
     .btn:hover {
@@ -149,18 +149,19 @@
     }
 
     .card {
-      border: 1px solid #dbeafe;
-      border-radius: 1.25rem;
+      border: 1px solid #e4e3dd;
+      border-radius: 0.5rem;
       background-color: #ffffff;
-      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.1), 0 1px 2px rgba(15, 23, 42, 0.06);
+      box-shadow: none;
     }
 
     .section-title {
       font-size: clamp(2rem, 1.65rem + 1.4vw, 3rem);
-      font-weight: 800;
+      font-weight: 400;
+      font-family: Georgia, 'Times New Roman', serif;
       line-height: 1.05;
       letter-spacing: -0.03em;
-      color: #1e3a8a;
+      color: #152f37;
     }
 
     .lead {
@@ -186,7 +187,57 @@
       top: 1rem;
     }
 
+    section[id] { scroll-margin-top: 130px; }
+    .eyebrow { font-size: 10px; font-weight: 600; letter-spacing: .18em; line-height: 1.8; color: #76644b; }
+    .editorial-hero { padding: 64px 0 0; background: #f2f1ec; }
+    .hero-layout { max-width: 1280px; margin: auto; padding: 0 32px 64px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 48px; }
+    .hero-copy h1 { margin: 25px 0; font: 400 clamp(42px, 4.5vw, 68px)/1.08 Georgia, serif; letter-spacing: -.045em; color: #152f37; }
+    .hero-copy h1 em { color: #846a46; font-weight: 400; }
+    .hero-description { max-width: 440px; font-size: 16px; line-height: 1.85; color: #586565; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin-top: 30px; }
+    .hero-actions .btn { font-size: 14px; gap: 20px; }
+    .editorial-link { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; font-size: 13px; color: #183c46; text-decoration: underline; text-underline-offset: 5px; }
+    .hero-note { margin-top: 24px; font-size: 11px; color: #687471; }
+    .hero-vehicle { min-width: 0; margin: 0; }
+    .vehicle-kicker { display: flex; justify-content: space-between; gap: 12px; font-size: 9px; letter-spacing: .18em; color: #69736d; padding-bottom: 20px; border-bottom: 1px solid #d9d8cf; }
+    .hero-vehicle img { width: 100%; height: auto; margin: 45px auto 28px; }
+    .hero-vehicle figcaption { display: flex; justify-content: space-between; align-items: center; gap: 16px; border-top: 1px solid #d9d8cf; padding-top: 20px; }
+    .hero-vehicle figcaption p { margin-top: 4px; font: 24px Georgia, serif; color: #183c46; }
+    .journey-strip { display: grid; grid-template-columns: repeat(3, 1fr); background: #183c46; padding: 0 max(24px, calc((100vw - 1216px) / 2)); }
+    .journey-strip a { display: flex; align-items: center; gap: 16px; padding: 28px 24px; color: #fff; font-size: 14px; border-right: 1px solid #ffffff20; }
+    .journey-strip a:last-child { border: 0; }
+    .journey-strip a span:first-child { font-size: 10px; color: #d1b88f; }
+    .journey-strip a span:last-child { margin-left: auto; }
+    #servicios article, #flota article { display: flex; flex-direction: column; }
+    #servicios article > div, #flota article > div:last-child { height: auto; flex: 1; }
+    #servicios article a, #flota article a { padding-top: 12px; min-height: 44px; }
+    #flota { background: #eeeee8; }
+    section[aria-labelledby="instagram-title"] > div > div { background: #183c46; border-radius: 6px; box-shadow: none; }
+    section[aria-labelledby="instagram-title"] .absolute { display: none; }
+    #instagram-title, #cta-title { font-family: Georgia, serif; font-weight: 400; letter-spacing: -.025em; }
+    section[aria-labelledby="cta-title"] > div > div { border-radius: 6px; box-shadow: none; }
+    section[aria-labelledby="cta-title"] .absolute { display: none; }
+    #destinos article { border: 0; background: transparent; }
+    #destinos article img { height: 230px; border-radius: 4px; }
+    #destinos article > div { padding: 20px 0; }
+    #destinos article h3 { font: 26px Georgia, serif; }
+    #contacto input, #contacto textarea { font-size: 16px; }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      header a[href="#home"] > div:nth-child(2) { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
     @media (max-width: 767px) {
+      .editorial-hero { padding-top: 40px; }
+      .hero-layout { grid-template-columns: 1fr; gap: 40px; padding: 0 24px 36px; }
+      .hero-copy h1 { font-size: clamp(37px, 9.6vw, 62px); }
+      .hero-vehicle img { margin: 24px auto; }
+      .journey-strip { grid-template-columns: 1fr; padding: 0 24px; }
+      .journey-strip a { padding: 19px 0; border-right: 0; border-bottom: 1px solid #ffffff20; }
+      .hero-actions { gap: 12px; }
+      .hero-note { margin-top: 16px; }
       .btn {
         width: 100%;
       }
@@ -242,80 +293,28 @@
   </header>
 
   <main id="main-content">
-    <section id="home" class="relative overflow-hidden pb-16 pt-8 md:pb-24 md:pt-12">
-      <div class="absolute inset-0 bg-gradient-to-br from-sky-100 via-sky-50 to-blue-50"></div>
-      <div class="absolute -right-24 -top-24 h-[36rem] w-[36rem] rounded-full opacity-40 blur-3xl" style="background: radial-gradient(closest-side,#8ad0ff,transparent)"></div>
-
-      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid items-center gap-12 lg:grid-cols-[minmax(0,1.02fr)_minmax(0,0.98fr)]">
-          <div class="min-w-0">
-            <span class="chip"><i data-lucide="shield-check" class="h-3.5 w-3.5"></i> Turismo seguro y confiable</span>
-            <h1 class="mt-5 max-w-[12ch] text-4xl font-extrabold leading-[0.95] tracking-[-0.04em] text-brand-dark sm:text-5xl lg:text-6xl">
-              Turismo y viajes ejecutivos diseñados para ti.
-            </h1>
-            <p class="lead mt-5 max-w-2xl">
-              Traslados para grupos, empresas, colegios y eventos desde Santiago de Chile. Puntualidad, seguridad y comodidad en cada kilómetro.
-            </p>
-            <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <a href="#contacto" class="btn bg-brand-blue text-white hover:bg-blue-700">
-                Reservá tu viaje <i data-lucide="arrow-right" class="h-4 w-4"></i>
-              </a>
-              <a href="#flota" class="btn border border-blue-200 bg-white text-blue-800 hover:bg-blue-50">
-                Ver flota
-              </a>
-            </div>
-            <div class="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-600">
-              <span class="flex items-center gap-2"><i data-lucide="badge-check" class="h-4 w-4 text-blue-600"></i> Conductores profesionales</span>
-              <span class="flex items-center gap-2"><i data-lucide="clock" class="h-4 w-4 text-blue-600"></i> Atención 24/7</span>
-              <span class="flex items-center gap-2"><i data-lucide="map" class="h-4 w-4 text-blue-600"></i> Cobertura en todo Chile</span>
-            </div>
+    <section id="home" class="editorial-hero" aria-labelledby="hero-title">
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">TRANSPORTES BIELER · SANTIAGO, CHILE</p>
+          <h1 id="hero-title">Tu destino.<br>Un viaje <em>extraordinario.</em></h1>
+          <p class="hero-description">Traslados ejecutivos y turismo privado, con la atención que tu viaje merece. De tu próxima reunión a tu próxima escapada.</p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn bg-brand-blue text-white">Planifica tu traslado <span aria-hidden="true">↗</span></a>
+            <a href="#servicios" class="editorial-link">Explora nuestros servicios <span aria-hidden="true">→</span></a>
           </div>
-
-          <div class="relative min-w-0">
-            <div class="relative overflow-hidden rounded-[2rem] border border-slate-700 bg-brand-ink shadow-2xl">
-              <div class="absolute -right-20 -top-24 h-72 w-72 rounded-full bg-blue-600/30 blur-3xl"></div>
-              <div class="absolute -bottom-24 -left-16 h-64 w-64 rounded-full bg-brand-gold/20 blur-3xl"></div>
-              <div class="relative flex min-h-[480px] flex-col p-6 sm:min-h-[520px] sm:p-8">
-                <div class="flex items-start justify-between gap-4">
-                  <div>
-                    <p class="text-xs font-bold uppercase tracking-[0.22em] text-brand-gold">Movilidad ejecutiva</p>
-                    <h2 class="mt-2 text-2xl font-bold text-white sm:text-3xl">Hyundai Staria Premium</h2>
-                    <p class="mt-2 max-w-md text-sm leading-relaxed text-slate-300">Presentación impecable, amplitud y confort para reuniones, aeropuertos, eventos y turismo privado.</p>
-                  </div>
-                  <span class="hidden rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-semibold text-white sm:inline-flex">Servicio privado</span>
-                </div>
-
-                <div class="relative flex flex-1 items-center justify-center py-5">
-                  <div class="absolute bottom-8 h-14 w-4/5 rounded-[50%] bg-black/50 blur-2xl"></div>
-                  <img
-                    src="img/hyundai-staria.png"
-                    alt="Hyundai Staria negra de Transportes Bieler"
-                    class="relative z-10 w-full max-w-[560px] object-contain drop-shadow-2xl"
-                    width="528"
-                    height="311"
-                    loading="eager"
-                    fetchpriority="high"
-                    decoding="async" />
-                </div>
-
-                <div class="grid gap-3 sm:grid-cols-3">
-                  <div class="rounded-2xl border border-white/10 bg-white/10 p-3 backdrop-blur">
-                    <i data-lucide="briefcase-business" class="h-5 w-5 text-brand-gold"></i>
-                    <p class="mt-2 text-sm font-semibold text-white">Empresas y ejecutivos</p>
-                  </div>
-                  <div class="rounded-2xl border border-white/10 bg-white/10 p-3 backdrop-blur">
-                    <i data-lucide="plane" class="h-5 w-5 text-brand-gold"></i>
-                    <p class="mt-2 text-sm font-semibold text-white">Aeropuerto y hoteles</p>
-                  </div>
-                  <div class="rounded-2xl border border-white/10 bg-white/10 p-3 backdrop-blur">
-                    <i data-lucide="map-pinned" class="h-5 w-5 text-brand-gold"></i>
-                    <p class="mt-2 text-sm font-semibold text-white">Tours privados</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <p class="hero-note">Atención personalizada · Itinerarios a medida</p>
         </div>
+        <figure class="hero-vehicle">
+          <div class="vehicle-kicker"><span>EL ARTE DE VIAJAR BIEN</span><span>TB / CHILE</span></div>
+          <img src="img/hyundai-staria.png" width="528" height="311" alt="Hyundai Staria negra para traslados ejecutivos y turismo privado" fetchpriority="high" decoding="async">
+          <figcaption><div><span class="eyebrow">TU VIAJE, CON ESTILO</span><p>Hyundai Staria</p></div><a href="#flota" class="editorial-link">Conoce la flota <span aria-hidden="true">↗</span></a></figcaption>
+        </figure>
+      </div>
+      <div class="journey-strip">
+        <a href="#servicios"><span>01</span> Movilidad ejecutiva <span aria-hidden="true">↗</span></a>
+        <a href="#servicios"><span>02</span> Aeropuerto &amp; hoteles <span aria-hidden="true">↗</span></a>
+        <a href="#destinos"><span>03</span> Turismo &amp; escapadas <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
@@ -389,7 +388,7 @@
           </article>
 
           <article class="card overflow-hidden">
-            <div class="flex h-48 items-center justify-center bg-gradient-to-br from-slate-100 to-blue-50 p-4">
+            <div class="flex h-48 items-center justify-center bg-stone-100 p-4">
               <img src="img/hyundai-staria.png" alt="Hyundai Staria Premium negra de Transportes Bieler" class="h-full w-full object-contain drop-shadow-xl" loading="lazy" decoding="async">
             </div>
             <div class="flex h-full flex-col p-5">
@@ -468,7 +467,7 @@
 
     <section class="py-12 md:py-16" aria-labelledby="cta-title">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div class="relative overflow-hidden rounded-[2rem] border border-blue-100 p-8 shadow-xl md:p-12" style="background:linear-gradient(135deg,#bfdbfe,#3b82f6)">
+        <div class="relative overflow-hidden rounded-[2rem] border border-blue-100 p-8 shadow-xl md:p-12" style="background:#183c46">
           <div class="absolute -left-10 -top-20 h-56 w-56 rounded-full opacity-30 blur-3xl" style="background:#8ad0ff"></div>
           <div class="relative grid items-center gap-6 lg:grid-cols-[minmax(0,1fr)_auto]">
             <div>
