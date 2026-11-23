@@ -1,0 +1,10 @@
+Asset: santiago-transfer-hero.jpg
+Method: built-in image_gen, then JPEG encoding at quality 88 for web delivery.
+Reference: img/hyundai-staria.png (vehicle identity only).
+This is an AI-generated illustrative scene, not a photograph of an actual company trip.
+
+Follow-up edit (built-in image_gen):
+Change ONLY the lettering on the small white front license plate from STARIA to exact text "TBieler" (capital T, capital B, lowercase i e l e r). Preserve the plate perspective and lighting, the panoramic composition, van, passengers, road, trees, buildings, Andes and colors. No other text or graphics.
+
+Prompt:
+Create a photorealistic wide panoramic website hero photograph for Transportes Bieler private executive and tourist transport, Santiago Chile. Use attached black Hyundai Staria only as vehicle identity reference, integrate it naturally into a real travel scene, not a showroom or isolated product. Composition 2.5:1 landscape, high resolution. A leafy boulevard in Santiago's modern Las Condes district with contemporary buildings, distant Andes and soft late-afternoon sunshine. View from street level, believable road perspective. Black Staria transporting passengers occupies the right third at medium distance, no larger than 30 percent of image width, front three-quarter view facing toward viewer-left, all wheels grounded with natural shadows and reflections. The city and journey are the main scene. Left half contains softly shaded trees and open roadway with low visual clutter so white website heading can be placed over it later. Natural sophisticated photography, restrained colors, credible documentary travel aesthetic, no oversaturation, no artificial HDR. No added text, no promotional graphics, no borders, no orange competitor branding, no watermarks. Vehicle should match supplied van shape and color. This is an illustrative background image, not a screenshot of a website. Save the generated image and return its local file path for integration into the repository.
